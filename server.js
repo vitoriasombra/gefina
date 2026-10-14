@@ -40,10 +40,12 @@ app.get('/api/health', (request, response) => {
         message: 'Server is running.'
     } });
 });
+// verificar se o servidor está funcionando
 
 app.get('/api/invoices', (request, response) =>{
     response.status(200).json(invoices);
 })
+//listar todas as faturas
 
 app.get('/api/invoices/:id', (request, response) => {
     const id = Number(request.params.id);
