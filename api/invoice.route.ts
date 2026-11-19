@@ -9,6 +9,7 @@ const router = Router();
 router.get('/', (_request, response) => {
   const invoices = findAllInvoices();
 
+   
   response.status(200).json(invoices);
 });
 
